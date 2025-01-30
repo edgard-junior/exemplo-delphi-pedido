@@ -1,0 +1,495 @@
+object FrmPedido: TFrmPedido
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'Pedido de venda'
+  ClientHeight = 472
+  ClientWidth = 817
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  DesignSize = (
+    817
+    472)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label13: TLabel
+    Left = 8
+    Top = 409
+    Width = 81
+    Height = 16
+    Caption = 'Valor pedido'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 44
+    Width = 594
+    Height = 53
+    Caption = 'Cliente'
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 68
+      Top = 9
+      Width = 27
+      Height = 13
+      Caption = 'Nome'
+      Color = clBtnFace
+      ParentColor = False
+      Transparent = False
+    end
+    object Label2: TLabel
+      Left = 351
+      Top = 9
+      Width = 33
+      Height = 13
+      Caption = 'Cidade'
+      Color = clBtnFace
+      ParentColor = False
+      Transparent = False
+    end
+    object Label3: TLabel
+      Left = 511
+      Top = 9
+      Width = 13
+      Height = 13
+      Caption = 'UF'
+      Color = clBtnFace
+      ParentColor = False
+      Transparent = False
+    end
+    object edtCliente: TEdit
+      Left = 7
+      Top = 22
+      Width = 55
+      Height = 21
+      Hint = 'Informe o c'#243'digo do cliente'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      OnExit = getEntidade
+      OnKeyPress = edtClienteKeyPress
+    end
+    object edtNome: TEdit
+      Left = 68
+      Top = 23
+      Width = 277
+      Height = 19
+      CharCase = ecUpperCase
+      Color = clBtnFace
+      Ctl3D = False
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object edtCidade: TEdit
+      Left = 351
+      Top = 23
+      Width = 154
+      Height = 19
+      CharCase = ecUpperCase
+      Color = clBtnFace
+      Ctl3D = False
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 2
+    end
+    object edtUF: TEdit
+      Left = 511
+      Top = 23
+      Width = 45
+      Height = 19
+      CharCase = ecUpperCase
+      Color = clBtnFace
+      Ctl3D = False
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 3
+    end
+  end
+  object Pnl_Titulo: TPanel
+    Left = 0
+    Top = 0
+    Width = 817
+    Height = 38
+    Align = alTop
+    Caption = 'Pedido de venda'
+    Color = 16733011
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentBackground = False
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 4
+    ExplicitWidth = 795
+  end
+  object cmdConsultar: TBitBtn
+    Left = 608
+    Top = 42
+    Width = 99
+    Height = 66
+    Anchors = [akRight]
+    Caption = 'Consulta pedido'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    Layout = blGlyphTop
+    NumGlyphs = 2
+    ParentFont = False
+    TabOrder = 5
+    OnClick = cmdExcluirClick
+    ExplicitLeft = 615
+    ExplicitTop = 44
+  end
+  object cmdExcluir: TBitBtn
+    Left = 710
+    Top = 42
+    Width = 99
+    Height = 66
+    Anchors = [akRight]
+    Caption = 'Excluir pedido'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    Layout = blGlyphTop
+    NumGlyphs = 2
+    ParentFont = False
+    TabOrder = 6
+    OnClick = cmdExcluirClick
+    ExplicitLeft = 717
+    ExplicitTop = 44
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Top = 103
+    Width = 594
+    Height = 50
+    Caption = 'Produtos'
+    TabOrder = 1
+    object Label4: TLabel
+      Left = 68
+      Top = 9
+      Width = 46
+      Height = 13
+      Caption = 'Descri'#231#227'o'
+      Color = clBtnFace
+      ParentColor = False
+      Transparent = False
+    end
+    object Label5: TLabel
+      Left = 351
+      Top = 9
+      Width = 56
+      Height = 13
+      Caption = 'Quantidade'
+      Color = clBtnFace
+      ParentColor = False
+      Transparent = False
+    end
+    object Label6: TLabel
+      Left = 423
+      Top = 9
+      Width = 63
+      Height = 13
+      Caption = 'Valor unit'#225'rio'
+      Color = clBtnFace
+      ParentColor = False
+      Transparent = False
+    end
+    object Label7: TLabel
+      Left = 495
+      Top = 9
+      Width = 49
+      Height = 13
+      Caption = 'Valor total'
+      Color = clBtnFace
+      ParentColor = False
+      Transparent = False
+    end
+    object edtProduto: TEdit
+      Left = 7
+      Top = 22
+      Width = 55
+      Height = 21
+      Hint = 'Informe o c'#243'digo do produto'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      OnExit = getEntidade
+      OnKeyPress = edtClienteKeyPress
+    end
+    object edtDescricao: TEdit
+      Left = 68
+      Top = 23
+      Width = 277
+      Height = 19
+      CharCase = ecUpperCase
+      Color = clBtnFace
+      Ctl3D = False
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object edtQuantidade: TEdit
+      Left = 351
+      Top = 22
+      Width = 66
+      Height = 21
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnExit = edtValorUnitarioExit
+    end
+    object edtValorUnitario: TEdit
+      Left = 423
+      Top = 22
+      Width = 66
+      Height = 21
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnExit = edtValorUnitarioExit
+    end
+    object edtValorTotal: TEdit
+      Left = 495
+      Top = 23
+      Width = 60
+      Height = 19
+      CharCase = ecUpperCase
+      Color = clBtnFace
+      Ctl3D = False
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 4
+    end
+    object cmdInserir: TBitBtn
+      Left = 557
+      Top = 10
+      Width = 33
+      Height = 33
+      Hint = 'Clique aqui para inserir o produto'
+      Kind = bkOK
+      NumGlyphs = 2
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 5
+      OnClick = cmdInserirClick
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 8
+    Top = 159
+    Width = 801
+    Height = 242
+    Caption = 'Itens pedido'
+    TabOrder = 2
+    object DBGrid1: TDBGrid
+      Left = 2
+      Top = 15
+      Width = 797
+      Height = 225
+      Align = alClient
+      DataSource = dspItem
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      OnKeyDown = DBGrid1KeyDown
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'ID'
+          Title.Caption = 'Produto'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'DESCRICAO_PRODUTO'
+          Title.Caption = 'Descri'#231#227'o'
+          Width = 349
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'QUANTIDADE'
+          Title.Caption = 'Quantidade'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'VALOR_UNITARIO'
+          Title.Caption = 'Valor unit'#225'rio'
+          Width = 84
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'VALOR_TOTAL'
+          Title.Caption = 'Valor total'
+          Visible = True
+        end>
+    end
+  end
+  object cmdGravar: TBitBtn
+    Left = 710
+    Top = 405
+    Width = 99
+    Height = 66
+    Anchors = [akRight]
+    Caption = 'Gravar pedido'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    Layout = blGlyphTop
+    NumGlyphs = 2
+    ParentFont = False
+    TabOrder = 3
+    OnClick = cmdGravarClick
+    ExplicitTop = 413
+  end
+  object Panel12: TPanel
+    Left = 8
+    Top = 427
+    Width = 114
+    Height = 37
+    BevelOuter = bvNone
+    Color = 16733011
+    ParentBackground = False
+    TabOrder = 7
+    object lblValorTotalPedido: TLabel
+      Left = 10
+      Top = 9
+      Width = 98
+      Height = 24
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = '0,00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindow
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+  end
+  object FDConn: TFDConnection
+    Params.Strings = (
+      'DriverID=MySQL'
+      'Server=localhost'
+      'Port=3306'
+      'Database=teste_wk'
+      'User_Name=root'
+      'Password=1234'
+      'CharacterSet=utf8mb4')
+    LoginPrompt = False
+    Left = 432
+    Top = 424
+  end
+  object dspItem: TDataSource
+    DataSet = tblItem
+    Left = 304
+    Top = 424
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConn
+    SQL.Strings = (
+      'SELECT * FROM CLIENTES')
+    Left = 384
+    Top = 424
+  end
+  object tblItem: TFDMemTable
+    AfterOpen = tblItemAfterOpen
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 256
+    Top = 424
+  end
+  object FDTransaction: TFDTransaction
+    Connection = FDConn
+    Left = 584
+    Top = 424
+  end
+end

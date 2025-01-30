@@ -1,0 +1,62 @@
+unit cliente;
+
+interface
+
+uses System.Classes;
+
+type
+
+  TCliente = class
+  private
+    Fcodigo: integer;
+    Fnome: string;
+    Fcidade: string;
+    Festado: string;
+    procedure setCodigo(const Value: integer);
+    procedure Setestado(const Value: string);
+    procedure Setcidade(const Value: string);
+    procedure Setnome(const Value: string);
+  public
+    constructor Create;
+    destructor Destroy(); Override;
+    property codigo: integer read Fcodigo write setCodigo;
+    property nome: string read Fnome write Setnome;
+    property cidade : string read Fcidade write Setcidade;
+    property estado : string read Festado write Setestado;
+  end;
+
+implementation
+
+{ TCliente }
+
+constructor TCliente.Create;
+begin
+  inherited;
+end;
+
+destructor TCliente.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TCliente.Setcidade(const Value: string);
+begin
+  Fcidade := Value;
+end;
+
+procedure TCliente.setCodigo(const Value: integer);
+begin
+  Fcodigo := Value;
+end;
+
+procedure TCliente.Setestado(const Value: string);
+begin
+  Fcidade := Value;
+end;
+
+procedure TCliente.Setnome(const Value: string);
+begin
+  Fnome := Value;
+end;
+
+end.

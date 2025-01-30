@@ -1,0 +1,14 @@
+program TesteWK;
+
+uses
+  Vcl.Forms,
+  uPedido in 'uPedido.pas' {FrmPedido};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmPedido, FrmPedido);
+  Application.Run;
+end.

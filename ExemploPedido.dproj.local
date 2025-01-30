@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/04/19 14:21:35.000.371,=C:\Users\Edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/10 14:08:48.000.788,=C:\Users\Edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/08/16 17:46:45.000.324,=C:\Users\Edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/08/16 20:23:26.000.175,=C:\Users\Edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/24 09:44:41.000.828,=C:\Users\Edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/01/28 20:32:58.000.710,=C:\Users\Edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/01/28 20:41:51.000.974,C:\Users\Edgar\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\TesteWK\uPedido.dfm</Transaction>
+    <Transaction>2025/01/28 20:41:51.000.974,C:\Users\Edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\TesteWK\uPedido.pas</Transaction>
+    <Transaction>2025/01/28 20:41:57.000.359,C:\Users\Edgar\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\TesteWK\TesteWK.dproj</Transaction>
+    <Transaction>2025/01/29 15:14:56.000.847,=C:\TesteWK\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 15:18:35.000.128,C:\TesteWK\Unit1.pas=C:\TesteWK\model\cliente.pas</Transaction>
+    <Transaction>2025/01/29 15:18:46.000.454,=C:\TesteWK\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 15:20:31.000.214,C:\TesteWK\Unit1.pas=C:\TesteWK\model\produto.pas</Transaction>
+    <Transaction>2025/01/29 15:25:04.000.413,=C:\TesteWK\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 15:27:11.000.342,C:\TesteWK\Unit1.pas=C:\TesteWK\model\pedido.pas</Transaction>
+    <Transaction>2025/01/29 15:27:36.000.321,=C:\TesteWK\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 15:29:46.000.568,C:\TesteWK\Unit1.pas=C:\TesteWK\model\itemPedido.pas</Transaction>
+    <Transaction>2025/01/29 16:58:27.000.028,=C:\TesteWK\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 17:15:12.000.058,C:\TesteWK\Unit1.pas=C:\TesteWK\model\database.pas</Transaction>
+    <Transaction>2025/01/29 17:16:25.000.998,C:\TesteWK\TesteWK.dproj=C:\TesteWK\ExemploPedido.dproj</Transaction>
+    <Transaction>2025/01/29 17:23:32.763,=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 17:31:13.966,C:\ExemploPedidoDelphi\controller\dataBaseController.pas=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 20:05:03.763,=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 20:15:10.848,C:\ExemploPedidoDelphi\controller\clienteController.pas=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 20:16:58.271,=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 20:19:07.079,C:\ExemploPedidoDelphi\controller\produtoController.pas=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 20:30:56.787,=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 20:31:43.621,C:\ExemploPedidoDelphi\utils_functions.pas=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 21:32:23.188,=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 21:41:11.774,C:\ExemploPedidoDelphi\controller\pedidoController.pas=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+    <Transaction>2025/01/29 22:17:16.310,=C:\ExemploPedidoDelphi\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

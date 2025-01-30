@@ -1,0 +1,53 @@
+unit utils_functions;
+
+interface
+
+uses System.Classes, Messages, vcl.Forms, dialogs, vcl.controls, system.SysUtils, Vcl.StdCtrls, Windows;
+
+type
+  TEditPadrao = class
+    class procedure IntegerEdit(Sender: TObject; var Key: Char);
+    class procedure FloatEdit(Sender: TObject; var Key: Char);
+    class procedure NextOrder(Sender: TObject);
+    class function GetFormulario(Sender: TObject) : TForm;
+  end;
+
+implementation
+
+{ TEditPadrao }
+
+class procedure TEditPadrao.FloatEdit(Sender: TObject; var Key: Char);
+begin
+
+end;
+
+class procedure TEditPadrao.IntegerEdit(Sender: TObject; var Key: Char);
+begin
+  Try
+    case Key of
+      #13:
+        TEditPadrao.NextOrder(Sender as TWinControl);
+    else if not(Key in [#3, #8, #24, #26, '0' .. '9']) then
+         Key := #0;
+    end;
+    StrToInt(TEdit(Sender).Text);
+  Except
+    Key := #0;
+    showmessage('Valor inválido');
+  End;
+end;
+
+class function TEditPadrao.getFormulario(Sender: TObject): TForm;
+begin
+
+end;
+
+class procedure TEditPadrao.NextOrder(Sender: TObject);
+  Var Form : Tform;
+begin
+  Form := TEditPadrao.getFormulario(Sender);
+  if Form.Visible then
+    SendMessage( Form.handle , WM_NEXTDLGCTL, 0, 0 );
+end;
+
+end.
