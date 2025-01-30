@@ -66,7 +66,6 @@ type
     procedure carregaDadosPedido(pedido : integer);
     procedure addProduto(id : integer; descricao : string; quantidade, valorUnitario, valorTotal : double);
     procedure spbtnInserirClick(Sender: TObject);
-    procedure edtQuantidadeKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
     vCliente : TCliente;
@@ -198,11 +197,6 @@ end;
 procedure TFrmPedido.edtClienteKeyPress(Sender: TObject; var Key: Char);
 begin
   TEditPadrao.IntegerEdit(Sender,key);
-end;
-
-procedure TFrmPedido.edtQuantidadeKeyPress(Sender: TObject; var Key: Char);
-begin
-  TEditPadrao.FloatEdit(Sender,key);
 end;
 
 procedure TFrmPedido.edtValorUnitarioExit(Sender: TObject);

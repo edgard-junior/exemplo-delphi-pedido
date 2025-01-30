@@ -2,6 +2,7 @@ program ExemploPedido;
 
 uses
   Vcl.Forms,
+  uPedido in 'uPedido.pas' {FrmPedido},
   cliente in 'model\cliente.pas',
   produto in 'model\produto.pas',
   pedido in 'model\pedido.pas',
@@ -10,9 +11,8 @@ uses
   dataBaseController in 'controller\dataBaseController.pas',
   clienteController in 'controller\clienteController.pas',
   produtoController in 'controller\produtoController.pas',
-  pedidoController in 'controller\pedidoController.pas',
-  uPedido in 'view\uPedido.pas' {FrmPedido},
-  utils_functions in 'utils\utils_functions.pas';
+  utils_functions in 'utils_functions.pas',
+  pedidoController in 'controller\pedidoController.pas';
 
 {$R *.res}
 

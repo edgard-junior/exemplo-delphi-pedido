@@ -202,7 +202,7 @@ end;
 
 procedure TFrmPedido.edtQuantidadeKeyPress(Sender: TObject; var Key: Char);
 begin
-  TEditPadrao.FloatEdit(Sender,key);
+  TEditPadrao.FlotEdit(Sender,key);
 end;
 
 procedure TFrmPedido.edtValorUnitarioExit(Sender: TObject);

@@ -162,6 +162,7 @@ object FrmPedido: TFrmPedido
     ParentCtl3D = False
     ParentFont = False
     TabOrder = 4
+    ExplicitWidth = 795
   end
   object cmdConsultar: TBitBtn
     Left = 608
@@ -180,6 +181,8 @@ object FrmPedido: TFrmPedido
     ParentFont = False
     TabOrder = 5
     OnClick = cmdExcluirClick
+    ExplicitLeft = 615
+    ExplicitTop = 44
   end
   object cmdExcluir: TBitBtn
     Left = 710
@@ -198,6 +201,8 @@ object FrmPedido: TFrmPedido
     ParentFont = False
     TabOrder = 6
     OnClick = cmdExcluirClick
+    ExplicitLeft = 717
+    ExplicitTop = 44
   end
   object GroupBox2: TGroupBox
     Left = 8
@@ -466,11 +471,10 @@ object FrmPedido: TFrmPedido
       ParentFont = False
       TabOrder = 2
       OnExit = edtValorUnitarioExit
-      OnKeyPress = edtQuantidadeKeyPress
     end
     object edtValorUnitario: TEdit
       Left = 423
-      Top = 26
+      Top = 22
       Width = 66
       Height = 21
       Font.Charset = DEFAULT_CHARSET
@@ -481,7 +485,6 @@ object FrmPedido: TFrmPedido
       ParentFont = False
       TabOrder = 3
       OnExit = edtValorUnitarioExit
-      OnKeyPress = edtQuantidadeKeyPress
     end
     object edtValorTotal: TEdit
       Left = 495
